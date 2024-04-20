@@ -50,6 +50,10 @@
       "require": "./src/sqlite-api.js",
       "types": "./src/types/wa-sqlite.d.ts"
     },
+    "./wasm-module-path": {
+      "import": "./dist/wa-sqlite-async.wasm",
+      "types": "./src/types/wasm-module-path.d.ts"
+    },
     "./wa-sqlite-async": {
       "import": "./dist/wa-sqlite-async.mjs",
       "types": "./src/types/wa-sqlite-async.d.ts"
