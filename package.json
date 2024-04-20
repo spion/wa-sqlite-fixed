@@ -1,9 +1,10 @@
 {
-  "name": "wa-sqlite",
+  "name": "wa-sqlite-fixed",
+  "description": "A fork of wa-sqlite that can be more easily used with bundlers such as Vite",
   "version": "0.9.13",
   "type": "module",
   "main": "src/sqlite-api.js",
-  "types": "src/types/index.d.ts",
+  "types": "src/types/wa-sqlite.d.ts",
   "files": [
     "src/sqlite-constants.js",
     "src/sqlite-api.js",
@@ -41,6 +42,17 @@
     },
     "sinon@15.0.1": {
       "unplugged": true
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./src/sqlite-api.js",
+      "require": "./src/sqlite-api.js",
+      "types": "./src/types/wa-sqlite.d.ts"
+    },
+    "./dist/wa-sqlite-async": {
+      "import": "./dist/wa-sqlite-async.mjs",
+      "types": "./src/types/wa-sqlite-async.d.ts"
     }
   }
 }
