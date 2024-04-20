@@ -1,7 +1,7 @@
 {
   "name": "wa-sqlite-fixed",
   "description": "A fork of wa-sqlite that can be more easily used with bundlers such as Vite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "src/sqlite-api.js",
   "types": "src/types/wa-sqlite.d.ts",
