@@ -50,9 +50,25 @@
       "require": "./src/sqlite-api.js",
       "types": "./src/types/wa-sqlite.d.ts"
     },
-    "./dist/wa-sqlite-async": {
+    "./wa-sqlite-async": {
       "import": "./dist/wa-sqlite-async.mjs",
       "types": "./src/types/wa-sqlite-async.d.ts"
+    },
+    "./vfs/memory": {
+      "import": "./src/examples/MemoryAsyncVFS.js",
+      "types": "./src/types/vfs/memory.d.ts"
+    },
+    "./vfs/idb": {
+      "import": "./src/examples/IDBBatchAtomicVFS.js",
+      "types": "./src/types/vfs/idb.d.ts"
+    },
+    "./vfs/opfs": {
+      "import": "./src/examples/OriginPrivateFileSystemVFS.js",
+      "types": "./src/types/vfs/opfs.d.ts"
+    },
+    "./vfs/ahp": {
+      "import": "./src/examples/AccessHandlePoolVFS.js",
+      "types": "./src/types/vfs/ahp.d.ts"
     }
   }
 }
